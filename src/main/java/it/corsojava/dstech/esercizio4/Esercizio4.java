@@ -9,23 +9,17 @@ import java.util.Scanner;
 //su un file che legge da console
 
 public class Esercizio4 {
-	public static void main(String[] args) throws IOException {
 
-		Scanner leggi = new Scanner(System.in);
-		System.out.println("Inserisci path del file: ");
-		String percorso = leggi.nextLine();
+	public static void ScriviSuFile(String path) throws IOException {
 
-		File file = new File(percorso);
-		List<String> lista = new ArrayList<String>();
-		FileOutputStream stream = new FileOutputStream(file, true);
+		FileOutputStream stream = new FileOutputStream(path, true);
 		PrintWriter write = new PrintWriter(stream);
-		
+		List<String> lista = new ArrayList<String>();
 		for (String string : lista) {
 			write.append('\n');
 			write.append(string);
-		}		
+		}
 		write.flush();
 		write.close();
-
 	}
 }
