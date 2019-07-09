@@ -4,7 +4,7 @@ package esercizio7;
 
 public class Palindroma {
 	
-		
+//		we
 		public static boolean isPalindroma(String x) {
 		int inizio=0;
 		int fine = x.length()-1;
