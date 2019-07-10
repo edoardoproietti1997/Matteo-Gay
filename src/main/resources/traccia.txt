@@ -1,0 +1,10 @@
+1) scrivere un oggetto che effettua le operazioni matematiche di base
+2) scrivere un oggetto che si connette ad un database e permette di fare una query ed una insert
+3) scrivere un oggetto che prende in input, da console, un file e ne legge il testo e lo restituisce come lista di stringhe
+4) scrivere un oggetto che manda in output su file una lista di stringhe, su un fule che legge da console
+5) scrivere una classe (seguendo il db di esempio) che rappresenti le città con tutti i metodi minimali (equals, tostring) e con un ordinamento naturale sulla popolazione
+6) scrivere una classe che prende in input una stringa e ne stampa il suo contrario
+7) scrivere una classe che prenda in ingresso una stringa e ci dica se sia palindroma
+8) scrivere una classe che verifichi la correttezza di un pattern per il riconoscimento di indirizzi mail
+
+commmittare tutto sul repositori https://github.com/edoardoproietti1997/Matteo-Gay.git
