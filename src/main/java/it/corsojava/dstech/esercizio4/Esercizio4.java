@@ -10,16 +10,45 @@ import java.util.Scanner;
 
 public class Esercizio4 {
 
-	public static void ScriviSuFile(String path) throws IOException {
+	private String path;
+	private List<String> list;
 
-		FileOutputStream stream = new FileOutputStream(path, true);
-		PrintWriter write = new PrintWriter(stream);
-		List<String> lista = new ArrayList<String>();
-		for (String string : lista) {
-			write.append('\n');
-			write.append(string);
-		}
-		write.flush();
-		write.close();
+	public Esercizio4(String path) {
+		this.path = path;
+		List<String> list = new ArrayList<String>();
 	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	public List<String> getList() {
+		return list;
+	}
+
+	public void setList(List<String> list) {
+		this.list = list;
+	}
+
+	public void scriviSuFile(String path) {
+
+		try {
+			FileOutputStream stream = new FileOutputStream(path, true);
+			PrintWriter write = new PrintWriter(stream);
+			for (String string : this.list) {
+				write.append('\n');
+				write.append(string);
+			}
+			write.flush();
+			write.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+	}
+
 }
